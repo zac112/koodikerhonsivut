@@ -1,0 +1,14 @@
+#kekkonen {
+    position: absolute;
+    right: 5%;
+    top: 0;
+    height: 50vh;
+}
+.ukk {
+    position: relative;
+    padding-left: 40px;
+}
+
+.vastaus {
+    padding-left: 3%;
+}
