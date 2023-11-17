@@ -1,7 +1,11 @@
 .qr{
     height: 100px;
     width: 100px;
+
 }
+
+.centered{margin:0 50%}
+
 body {
     background: #012622;
     color: #D3D5D7;
