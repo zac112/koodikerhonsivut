@@ -1,0 +1,33 @@
+#kekkonen {
+    position: absolute;
+    right: 5%;
+    top: 0;
+    height: 50vh;
+}
+.ukk {
+    position: relative;
+    padding-left: 40px;
+}
+
+.kysymykset {
+    width: 70%;
+}
+.kysymykset h2 {
+    padding: 0;
+    margin: 15px 0;
+}
+
+.vastaus {
+    padding-left: 3%;
+    margin: 0;
+    padding: 0;
+}
+/*display mobile when the browser window is 991px width or less*/
+@media only screen and (max-width: 991px){
+  #kekkonen{
+      position:static;
+  }
+  .kysymykset {
+    width: 100%;
+  }
+}
