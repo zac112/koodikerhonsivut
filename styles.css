@@ -1,3 +1,7 @@
+.qr{
+    height: 100px;
+    width: 100px;
+}
 body {
     background: #012622;
     color: #D3D5D7;
