@@ -21,3 +21,8 @@ h1 {
     justify-content: space-around;
     height: 100px;
 }
+#navbar {
+    display: block;
+    height: 70px;
+    width: 100%;
+}
