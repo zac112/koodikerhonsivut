@@ -19,3 +19,10 @@
 .linkit a:nth-child(odd) {
     background-color: #E98A15;
 }
+
+/*Pienempi fontti puhelimella*/
+@media only screen and (max-width: 900px){
+    .linkit a {
+        font-size: 1em;
+    }
+}
