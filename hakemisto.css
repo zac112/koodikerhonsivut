@@ -1,9 +1,3 @@
-#navbar {
-    display: block;
-    height: 70px;
-    width: 100%;
-}
-
 .linkit {
     display: flex;
     width: 100%;
@@ -24,4 +18,11 @@
 }
 .linkit a:nth-child(odd) {
     background-color: #E98A15;
+}
+
+/*Pienempi fontti puhelimella*/
+@media only screen and (max-width: 900px){
+    .linkit a {
+        font-size: 1em;
+    }
 }

@@ -4,7 +4,10 @@
 
 }
 
-.centered{margin:0 50%}
+.centered {
+    display: flex;
+    justify-content: center;
+}
 
 body {
     background: #012622;
@@ -20,4 +23,9 @@ h1 {
     display: flex;
     justify-content: space-around;
     height: 100px;
+}
+#navbar {
+    display: block;
+    height: 70px;
+    width: 100%;
 }
