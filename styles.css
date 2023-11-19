@@ -4,7 +4,10 @@
 
 }
 
-.centered{margin:0 50%}
+.centered {
+    display: flex;
+    justify-content: center;
+}
 
 body {
     background: #012622;
