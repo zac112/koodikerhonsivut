@@ -1,14 +1,7 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const nav = document.createElement('nav');
-    nav.id = 'navbar';
-    document.body.insertBefore(nav, document.body.firstChild)
-
-    const f = new XMLHttpRequest();
-    f.onreadystatechange = function(){
-        document.getElementById("navbar").innerHTML = this.response;
-    }
-    f.open("GET", "./hakemisto.html", true)
-    f.send()
-
-    // document.getElementById("navbar").innerHTML = 
-})
+document.getElementById('nav').innerHTML = '<link rel="stylesheet" href="hakemisto.css"/>\
+        <div class="linkit">\
+            <a href="./index.html">Home</a>\
+            <a href="./projektit.html">Projektit</a>\
+            <a href="./backlog.html">Backlog</a>\
+            <a href="./ukk.html">UKK</a>\
+        </div>'
