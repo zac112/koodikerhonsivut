@@ -29,3 +29,14 @@ h1 {
     height: 70px;
     width: 100%;
 }
+#mysteerinappi {
+  background-color: #43A607;
+  border: 12px;
+  color: white;
+  border-radius: 12px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}

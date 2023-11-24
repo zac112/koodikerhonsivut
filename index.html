@@ -13,10 +13,10 @@
 var kerrat = 0;
 function vaihdaVari(){
 kerrat = kerrat +1;
-if (kerrat == 0){document.getElementById("body").style.backgroundColor = "red";}
-if (kerrat == 1){document.getElementById("body").style.backgroundColor = "purple";}
+if (kerrat == 0){document.getElementById("body").style.backgroundColor = "#003B36";}
+if (kerrat == 1){document.getElementById("body").style.backgroundColor = "#8B0000";}
 if (kerrat == 2){
-document.getElementById('body').style.backgroundColor = "beige";
+document.getElementById('body').style.backgroundColor = "#36013F";
 kerrat = -1;}
 }
     </script>
@@ -36,7 +36,10 @@ kerrat = -1;}
         <img src="./discordqr.png" class="qr" alt="qr-koodi discordserverille">
     </div>
 
-<div id="mysteerinappi" onclick="vaihdaVari()">Mysteerinappi</div>
+<div id="mysteerinappi">
+<button type="button" onclick="vaihdaVari()">mysteerinappi</button>
+</div>
+
 </body>
 
 </html>
