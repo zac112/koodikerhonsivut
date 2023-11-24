@@ -8,7 +8,18 @@
 
 </head>
 
-<body>
+<body id='body'>
+    <script>
+var kerrat = 0;
+function vaihdaVari(){
+kerrat = kerrat +1;
+if (kerrat == 0){document.getElementById("body").style.backgroundColor = "red";}
+if (kerrat == 1){document.getElementById("body").style.backgroundColor = "purple";}
+if (kerrat == 2){
+document.getElementById('body').style.backgroundColor = "beige";
+kerrat = -1;}
+}
+    </script>
     <div id="nav">
         <script src="navbar.js"></script>
     </div>
@@ -24,6 +35,8 @@
     <div class="centered">
         <img src="./discordqr.png" class="qr" alt="qr-koodi discordserverille">
     </div>
+
+<div id="mysteerinappi" onclick="vaihdaVari()">Mysteerinappi</div>
 </body>
 
 </html>
