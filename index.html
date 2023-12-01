@@ -9,17 +9,80 @@
 </head>
 
 <body id='body'>
-    <script>
-var kerrat = 0;
-function vaihdaVari(){
-kerrat = kerrat +1;
-if (kerrat == 0){document.getElementById("body").style.backgroundColor = "#003B36";}
-if (kerrat == 1){document.getElementById("body").style.backgroundColor = "#8B0000";}
-if (kerrat == 2){
-document.getElementById('body').style.backgroundColor = "#36013F";
-kerrat = -1;}
-}
-    </script>
+<script>
+    var kerrat = 0;
+    function vaihdaVari() {
+        kerrat = kerrat + 1;
+        if (kerrat == 0) { document.getElementById("body").style.backgroundColor = "#003B36"; }
+        if (kerrat == 1) { document.getElementById("body").style.backgroundColor = "#8B0000"; }
+        if (kerrat == 2) {
+            document.getElementById('body').style.backgroundColor = "#36013F";
+            kerrat = -1;
+        }}
+
+    var pelaaja = 1;
+    function voittotarkistus(merkki){
+        var laatikko1 = document.getElementById("1");
+            var laatikko2 = document.getElementById("2");
+            var laatikko3 = document.getElementById("3");
+            var laatikko4 = document.getElementById("4");
+            var laatikko5 = document.getElementById("5");
+            var laatikko6 = document.getElementById("6");
+            var laatikko7 = document.getElementById("7");
+            var laatikko8 = document.getElementById("8");
+            var laatikko9 = document.getElementById("9");
+        if (laatikko1.innerText == merkki && laatikko2.innerText == merkki && laatikko3.innerText == merkki) {
+                alert("Jeeeee! Voitit! ")
+            }
+            if (laatikko4.innerText == merkki && laatikko5.innerText == merkki && laatikko6.innerText == merkki) {
+                alert("Jeeeee! Voitit! ")
+            }
+            if (laatikko7.innerText == merkki && laatikko8.innerText == merkki && laatikko9.innerText == merkki) {
+                alert("Jeeeee! Voitit! ")
+            }
+            if (laatikko1.innerText == merkki && laatikko4.innerText == merkki && laatikko7.innerText == merkki) {
+                alert("Jeeeee! Voitit! ")
+            }
+            if (laatikko2.innerText == merkki && laatikko5.innerText == merkki && laatikko8.innerText == merkki) {
+                alert("Jeeeee! Voitit! ")
+            }
+            if (laatikko3.innerText == merkki && laatikko6.innerText == merkki && laatikko9.innerText == merkki) {
+                alert("Jeeeee! Voitit! ")
+            }
+            if (laatikko1.innerText == merkki && laatikko5.innerText == merkki && laatikko9.innerText == merkki) {
+                alert("Jeeeee! Voitit! ")
+            }
+            if (laatikko3.innerText == merkki && laatikko5.innerText == merkki && laatikko7.innerText == merkki) {
+                alert("Jeeeee! Voitit! ")
+            }
+    }
+    function vuoro(ruutu) {
+        var laatikko = document.getElementById(ruutu);
+        if (pelaaja == 1){
+            if (laatikko.innerText == "O") return;
+            if (laatikko.innerText == "X") return;
+            laatikko.innerText = "X";
+            pelaaja = 0;
+
+        
+           voittotarkistus("X");
+
+
+            return;
+    
+        }
+        if (pelaaja == 0){
+            if (laatikko.innerText == "X") return;
+            if (laatikko.innerText == "O") return;
+            laatikko.innerText = "O";
+            pelaaja = 1;
+
+            voittotarkistus("O");
+            
+        }
+
+    }
+</script>
     <div id="nav">
         <script src="navbar.js"></script>
     </div>
@@ -37,7 +100,44 @@ kerrat = -1;}
     </div>
 
 <div id="mysteerinappi">
+
 <button type="button" onclick="vaihdaVari()">mysteerinappi</button>
+
+<table>
+    <tr>
+        <td onclick="vuoro('1')"  id="1">
+            1 
+        </td>
+        <td onclick="vuoro('2')" id="2">
+            2
+        </td>
+        <td onclick="vuoro('3')" id="3">
+            3
+        </td>
+    </tr>
+    <tr>
+        <td onclick="vuoro('4')" id="4">
+            4
+        </td>
+        <td onclick="vuoro('5')"id="5">
+            5
+        </td>
+        <td onclick="vuoro('6')" id="6">
+            6
+        </td>
+    </tr>
+    <tr>
+        <td onclick="vuoro('7')" id="7">
+            7
+        </td>
+        <td onclick="vuoro('8')" id="8">
+            8
+        </td>
+        <td onclick="vuoro('9')" id="9">
+            9
+        </td>
+    </tr>
+</table>
 </div>
 
 </body>
